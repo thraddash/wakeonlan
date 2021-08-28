@@ -1,8 +1,14 @@
 # wakeonlan
 create bash script and service to fix wake-on-lan being reset to disabled on shutdown
 
-#### 1. Become root user
-#### 2. Execute wol_script.sh
+#### 1. clone repository and chmod u+x on both shell scripts
+```
+git clone git@github.com:thraddash/wakeonlan.git
+cd wakeonlan
+
+chmod u+x wol_s*
+```
+#### 2. Become root user and execute wol_script.sh
 ```
 sudo su
 ./wol_script.sh
