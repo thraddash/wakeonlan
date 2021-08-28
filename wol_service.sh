@@ -1,6 +1,7 @@
 set -e
 
 echo "=====> Create /etc/systemd/system/wol_fix.service =============>"
+echo "=====> Press enter to continue or Press q to quit =============>"
 read TS
 if [[ $TS == "q" ]]; then
   exit
