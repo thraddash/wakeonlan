@@ -30,6 +30,7 @@ if [[ $TS == "q" ]]; then
   exit
 else [[ $TS == "" ]];
   systemctl daemon-reload
+  systemclt start wol_fix.service
   systemctl enable wol_fix.service
   echo "######## Current status: wol_fix.service #############################"
   echo $(systemctl status wol_fix.service| grep Active)
